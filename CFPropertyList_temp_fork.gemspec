@@ -8,7 +8,13 @@ Gem::Specification.new do |s|
   s.summary = "Read, write and manipulate both binary and XML property lists as defined by apple"
   s.description = "This is a module to read, write and manipulate both binary and XML property lists as defined by apple."
   #s.rubyforge_project = 'cfpropertylist'
-  s.files = FileList["lib/*"].to_a
+  s.files = s.files = [
+       "lib/cfpropertylist.rb",
+       "lib/rbBinaryCFPropertyList.rb",
+       "lib/rbCFPlistError.rb",
+       "lib/rbCFTypes.rb",
+       "lib/rbXMLCFPropertyList.rb"
+    ]
   s.require_path = "lib"
   #s.autorequire = "name"
   #s.test_files = FileList["{test}/**/*test.rb"].to_a
