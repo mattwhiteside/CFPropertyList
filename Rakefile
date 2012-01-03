@@ -5,7 +5,7 @@ require 'rake/rdoctask'
 require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
-  s.name = "CFPropertyList"
+  s.name = "CFPropertyList_temp_fork"
   s.version = "2.0.17"
   s.author = "Christian Kruse"
   s.email = "cjk@wwwtech.de"
@@ -13,7 +13,7 @@ spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "Read, write and manipulate both binary and XML property lists as defined by apple"
   s.description = "This is a module to read, write and manipulate both binary and XML property lists as defined by apple."
-  s.rubyforge_project = 'cfpropertylist'
+  #s.rubyforge_project = 'cfpropertylist'
   s.files = FileList["lib/*"].to_a
   s.require_path = "lib"
   #s.autorequire = "name"
