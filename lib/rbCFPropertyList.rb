@@ -144,7 +144,7 @@ module CFPropertyList
       when object.respond_to?(:read)
         CFData.new(object.read(), CFData::DATA_RAW)
       when options[:converter_method] && object.respond_to?(options[:converter_method])
-        CFPropertyList.guess(object.send(options[:converter_method],options))
+        CFPropertyList.guess(object.send(options[:converter_method],options),options)
       when options[:convert_unknown_to_string]
         CFString.new(object.to_s)
       else
