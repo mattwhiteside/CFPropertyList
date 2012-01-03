@@ -5,7 +5,7 @@ require 'rake/rdoctask'
 require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
-  s.name = "CFPropertyList"
+  s.name = "CFPropertyList_temp_fork"
   s.version = "2.0.17"
   s.author = "Christian Kruse"
   s.email = "cjk@wwwtech.de"
